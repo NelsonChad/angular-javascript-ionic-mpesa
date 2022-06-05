@@ -1,20 +1,25 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title> Mpesa </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-card>
+    <ion-badge>{{ plat }}</ion-badge>
+    <br />
+    <ion-label>Coloque o seu Numero</ion-label>
+    <ion-input type="number" [(ngModel)]="cusnmr"></ion-input>
+    <ion-label>Coloque o valor</ion-label>
+    <ion-input type="number" [(ngModel)]="amount"></ion-input>
+    <ion-button (click)="doMpesa()">PAY</ion-button>
+    <p>RESPOSTA: {{ response }}</p>
+    <br />
+    NMR: {{cusnmr}}
+  </ion-card>
+  <ion-item>
+    STATUS:
+    <ion-badge color="success" *ngIf="status">{{ status }}</ion-badge>
+    <ion-badge color="danger" *ngIf="!status">{{ status }}</ion-badge>
+  </ion-item>
 </ion-content>
