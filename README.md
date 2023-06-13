@@ -9,4 +9,4 @@ M-Pesa is a mobile phone-based money transfer service, payments and micro-financ
 ![screensht](https://github.com/NelsonChad/angular-javascript-ionic-mpesa/blob/main/screens/mpesa.png) ![screensht](https://github.com/NelsonChad/angular-javascript-ionic-mpesa/blob/main/screens/mpesa2.png)
 
 
-### NELSON CHADALI
+### NELSON CHADALI"# ionic_mpesa" 
